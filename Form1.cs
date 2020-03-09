@@ -62,6 +62,10 @@ namespace Kalkulator
                 daneCB.Text += "0x18FEDF00UL | ID_XTD, prog_ACCEL_POS,                              /* - ACCEL_POS ------------------------- */\n";
             }
             
+             if (checkBox3.Checked)
+            {
+                daneCB.Text += "0x18FEDF00UL | ID_XTD, prog_ACCEL_POS,                              /* - ACCEL_POS ------------------------- */\n";
+            }
             Clipboard.GetData (daneCB.Text);
             MessageBox.Show("Copy");
             
